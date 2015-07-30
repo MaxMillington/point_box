@@ -16,17 +16,14 @@
     <%= f.text_field :username %>
   </div>
   <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.label :points %><br>
     <%= f.number_field :points %>
   </div>
-  <div class="field">
-    <%= f.label :role %><br>
-    <%= f.number_field :role %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

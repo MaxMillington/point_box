@@ -27,7 +27,6 @@ class RewardTest < ActiveSupport::TestCase
     refute woodblock2.valid?
   end
 
-
   private
   def reward
     Reward.new(name: "Woodblock", cost: 10)

@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   end
 
   def new
-
+    @user = User.new
   end
 
   def create
@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
       flash[:notice] = "Welcome, #{user.username}"
       redirect_to user
     else
-      flash.now[:notice] = "That Homey don't live here yo!"
+      flash.now[:notice] = "There is no user by that username"
       render :new
     end
   end
